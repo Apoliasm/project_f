@@ -9,11 +9,11 @@ import numpy
 from pytrends.request import TrendReq  #using unofficial api found in github
 from pytrends.dailydata import get_daily_data
 from . import crawling
-
+#to import py in same directory, use from . (if it is in parent direction, use from ..)
 
 
 #There are two module that read url, urllib.request and requests 
 #requests get url to dict type, request get url to binary type
 #requests is more frequently used
 
-def train_keyword
+ 

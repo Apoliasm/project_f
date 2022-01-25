@@ -17,6 +17,7 @@ from pytrends.dailydata import get_daily_data
 #requests get url to dict type, request get url to binary type
 #requests is more frequently used
 
+
 #1. news crawling
 def crawling(url):
     open_url = requests.get(url)   #first open url with requsets.get
@@ -130,21 +131,3 @@ def check_news():
                 
         elif inputed == 'x':
             break
-
-def main ():     
-    def menu_select ():
-        menu = input("type menu : type 1: check news about topic , type 2: check releted keywords, type 0:exit")
-        while(menu != '0'):
-            if menu == '1' :
-                keylist = list()
-                keyword = input("type keyword you want to find related things : ")
-                keylist.append(keyword)
-                find_related_keyword(key=keylist)
-                menu = input("type menu : type 1: check news about topic , type 2: check releted keywords,")
-            elif menu == '2' :
-                check_news()
-                menu = input("type menu : type 1: check news about topic , type 2: check releted keywords,")
-    menu_select()
-
-if __name__ == '__main__':
-    main()
